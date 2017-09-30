@@ -20,7 +20,7 @@ using System;
          {		
              var message = await argument;		
              await context.PostAsync(": " + message.Text);		
-             #context.Wait(MessageReceivedAsync);		
+             context.Wait(MessageReceivedAsync);		
         }		
    }		
  } 
