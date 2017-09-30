@@ -17,8 +17,9 @@ using System;
          }		
  		
          public async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> argument)		
-         {		
-             var message = await argument;		
+         {
+                 helper ll
+            var message = await argument;		
              await context.PostAsync(": " + message.Text);		
              context.Wait(MessageReceivedAsync);		
         }		
