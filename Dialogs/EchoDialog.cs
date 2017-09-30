@@ -20,7 +20,7 @@ namespace Microsoft.Bot.Sample.SimpleEchoBot
         {
             var message = await argument;
             await context.PostAsync(": " + message.Text);
-            context.Wait(MessageReceivedAsync);
+            #context.Wait(MessageReceivedAsync);
         }
     }
 }
